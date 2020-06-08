@@ -1,11 +1,11 @@
 <?php
     if(!isset($_SESSION['username'])){
-        session_destroy()
-        header("location: login1.php")
+        session_destroy();
+        header("location: login.php");
     }
     if(isset($_GET['logout'])){
-        session_destroy()
-        header("location: login1.php")
+        session_destroy();
+        header("location: login.php");
     }
     //new banch
 ?>
