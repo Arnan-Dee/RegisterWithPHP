@@ -6,6 +6,7 @@
         $username = mysqli_real_escape_string($conn,$_POST['username']);
     }
 
+    //create a new banch
 
 
 ?>

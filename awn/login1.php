@@ -9,7 +9,7 @@
     <h1>LOG IN</h1>
     <div class="input-group">
         <h1>USERNAME</h1>
-        
+
     </div>
 </body>
 </html>
