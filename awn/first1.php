@@ -7,6 +7,7 @@
         session_destroy()
         header("location: login1.php")
     }
+    //new banch
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,4 +22,11 @@
     <a href="first1?logout=1" style='color=red'>LOG OUT</a>
     
 </body>
+<style>
+* {
+    margin = 0;
+    padding = 0;
+    text-align = center;
+}
+</style>
 </html>
