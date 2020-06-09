@@ -1,4 +1,5 @@
 <?php
+    session_start();
     if(!isset($_SESSION['username'])){
         session_destroy();
         header("location: login.php");
@@ -7,7 +8,7 @@
         session_destroy();
         header("location: login.php");
     }
-    //new banch
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,8 +19,9 @@
 </head>
 <body>
     <h1>Welcome</h1>
-    <p><?php echo $_SESSION['username'] ?></p>
-    <a href="first1?logout=1" style='color=red'>LOG OUT</a>
+    <?php include 'errors.php'; ?>
+    <p><?php echo $_SESSION['username'];  ?></p>
+    <a href="first.php?logout=1" style='color=red'>LOG OUT</a>
     
 </body>
 <style>

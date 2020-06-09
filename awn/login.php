@@ -1,4 +1,4 @@
-<?php include 'database.php' ?>
+<?php include 'database.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,15 +9,15 @@
 </head>
 <body>
     <h1>LOG IN</h1>
-    <form action="database.php" method='post'>
-    <?php include 'errors.php' ?>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method='post'>
+        <?php include 'errors.php' ?>
         <div class="input-group">
             <h1>USERNAME</h1>
-            <input type="text" name='username'>
+            <input type="text" name='login_username'>
         </div>
         <div class="input-group">
             <h1>PASSWORD</h1>
-            <input type="text" name='password'>
+            <input type="text" name='login_password'>
         </div>
         <div class="input-group">
             <input type="submit" value='login'>
